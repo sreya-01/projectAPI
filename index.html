@@ -43,7 +43,7 @@
 
     async function loadNewsStream() {
         // apikey
-      const url = 'https://gnews.io/api/v4/search?q=Apple&lang=en&apikey= daa6d6a633a44ebea18fa941a1680a3d';
+      const url = 'https://corsproxy.io/?' + encodeURIComponent('https://newsapi.org/v2/everything?q=Apple&language=en&sortBy=popularity&apiKey=daa6d6a633a44ebea18fa941a1680a3d');
 
       try {
         const response = await fetch(url);
